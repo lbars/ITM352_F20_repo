@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2">
+
+        <script>
+            var tictactoe = ['x', 'o', 'x', 'o', 'x', 'o', 'x', 'o', 'o'];
+            
+            var text = '';
+            
+            for (i = 0; i < tictactoe.length; i++) {
+            text += tictactoe[i] + "<br>";
+            }
+
+            document.write(`
+                          <tr>
+                            <td>${tictactoe[0]}</td>
+                            <td>${tictactoe[1]}</td>
+                            <td>${tictactoe[2]}</td>
+                          </tr>
+                    `);
+            document.write(`
+                    <tr>
+                            <td>${tictactoe[3]}</td>
+                            <td>${tictactoe[4]}</td>
+                            <td>${tictactoe[5]}</td>
+                          </tr>
+                    `);
+            document.write(`
+                    <tr>
+                            <td>${tictactoe[6]}</td>
+                            <td>${tictactoe[7]}</td>
+                            <td>${tictactoe[8]}</td>
+                          </tr>
+                    `);
+        </script>
+        </tbody>
+    </table>
+</body>
+
+</html>

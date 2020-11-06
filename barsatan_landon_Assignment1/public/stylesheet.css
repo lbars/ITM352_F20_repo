@@ -1,0 +1,56 @@
+
+/* style for products page*/
+
+/* h1 style */
+h1 {
+    color: lightskyblue;
+    text-align: center;
+    font-style: inherit;
+    font-display: inherit;
+    text-shadow: -1px 0  black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}
+/* h2 style */
+h2 {
+    color:  lightskyblue;
+    text-align: center;
+    text-shadow: -1px 0  black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}
+/* cherry blossom .gif background */
+body {
+    justify-content: space-around;
+    background: url(./images/background.gif); 
+    background-repeat: repeat; 
+    background-size: contain; 
+    background-blend-mode: lighten;
+}
+/* sizing and borders for images */
+img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid grey;
+}
+/* centering of page and color */
+div {
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+/* submit button */
+input {
+  color: black;
+}
+ 
+/* invoice */
+table{
+    text-align: center;
+    border-color: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+th, td {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background:  lightskyblue;
+}

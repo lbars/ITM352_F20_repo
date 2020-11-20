@@ -1,8 +1,24 @@
-<!-- borrowed code from Assignment1 example & Lab13 -->
+<!-- Referenced Assignment 1 and Invoice WODs -->
 <script src="./product.js" type=""></script>
 <script>
-  //invoice loads after functions in sticker shop is checked 
+  
   let params = (new URL(document.location)).searchParams;
+
+  if (params.has('username')) {
+  }
+  else { //if the invoice page doesn't recieve username info, it will display a message that says please purchase/login before checkout and take the use to the products_display page.html page
+    alert('Please login before checkout');
+    window.location = 'login.html';
+    window.stop();
+  }
+  if (params.has(`purchase_submit`)) { }
+  else {
+    alert('You must enter the amount of stickers you want to purchase');
+    window.location = 'products_display.html';
+    window.stop();
+  }
+  //Form was submitted so initiate the invoice by taking the quantities that were submitted for each product
+  //If you went to invoice.html directly without submitting any quanitites, you will get a no form submitted
   var quantities = [];
   if (params.has('purchase_submit')) {
     for (i = 0; i < products.length; i++) {
@@ -15,9 +31,10 @@
     document.write('no form submitted');
   }
   console.log(quantities);
+  /*table to create the invoice
+  Linked is what is in the table to the product.js where all the prices items and pictures are
+  */
 </script>
-
-<!-- referenced and borrowed code from Invoice WODs 1-4 and Assignment1 exampple -->
 
 <head>
   <meta charset="UTF-8">
@@ -41,26 +58,26 @@
         <th width="54%">Extended Price</th>
       </tr>
       <script>
-        subtotal = 0;
+        subtotal = 0; //starting amount till prices are calculated and added up
+        //If the quantity's of the products are greater than 0, calculate extended price, subtotal and document write the products purchased, quanitites of each, price and extended price.
         for (i = 0; i < products.length; i++) {
-          if (quantities[i] > 0) {
+          if (quantities[i] > 0) { //product row
             // product row
             extended_price = quantities[i] * products[i].price
             subtotal += extended_price;
             document.write(`
-        <tr>
-          <td width="43%">${products[i].description}</td>
-          <td align="center" width="11%">${quantities[i]}</td>
-          <td width="13%">\$${products[i].price}</td>
-          <td width="54%">\$${extended_price}</td>
-        </tr>
-        `);
+          <tr>
+            <td width="43%">${products[i].description}</td>
+            <td align="center" width="11%">${quantities[i]}</td>
+            <td width="13%">\$${products[i].price}</td>
+            <td width="54%">\$${extended_price}</td>
+          </tr>
+          `);
           }
         }
         // Compute tax 
-        var tax_rate = 0.0575
+        var tax_rate = 0.0575;
         var tax = subtotal * tax_rate;
-
         // Compute shipping
         if (subtotal >= 100) {
           var shipping = 0.05 * subtotal
@@ -71,11 +88,10 @@
         else if (subtotal < 50) {
           var shipping = 2
         }
-        
         // Compute grand total 
         var grandtotal = subtotal + tax + shipping;
+        // Referenced Invoice WODs and Assignment 1
       </script>
-
       <tr>
         <td colspan="4" width="100%">&nbsp;</td>
       </tr>
@@ -87,7 +103,7 @@
       </tr>
       <tr>
         <td colspan="3" width="67%">Tax @
-          <script>document.write(100 * tax_rate);</script>%</span></td>
+          <script>document.write(tax_rate * 100);</script>%</span></td>
         <td width="54%">$
           <script>document.write(tax.toFixed(2));</script>
         </td>
@@ -105,22 +121,26 @@
       </tr>
       <tr>
         <td colspan="5" width="121%"><strong>
+
             OUR SHIPPING POLICY IS: <br>
             Subtotals of $0 - $49.99 will be charged $2 shipping. <br>
             Subtotals of $50 - $99.99 will be charged $5 shipping. <br>
             Subtotals over $100 will be charged 5% of the subtotal amount. <br>
+
           </strong></td>
+
 
       </tr>
     </tbody>
   </table>
   <footer>
-    <h1>
-      Thank you for your purchase!
-    </h1>
     <!-- Arigatou Gozaimasu : Thank You! -->
     <h1>
       ありがとうございます!
+    </h1>
+    <br>
+    <h1>
+      <script>document.write(`Thank you ${params.get('username')} for your purchase!!!`);</script>
     </h1>
   </footer>
 </body>

@@ -26,7 +26,7 @@ app.get("/process_page", function (request, response) {
             a_qty = params[`quantity${i}`];
             total_qty += a_qty;
             if (!isNonNegInt(a_qty)) {
-               has_errors = true; // oops, invalid quantity
+               has_errors = true; // invalid quantity
             }
          }
       }

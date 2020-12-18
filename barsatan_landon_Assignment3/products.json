@@ -1,0 +1,117 @@
+{
+    "Nani Sticker": [
+        {
+            "name" : "なに (Small)",
+            "description" : "(Nani Sticker)",
+            "size" : "Size: Small",
+            "price" : 3.99,
+            "image" : "./images/sticker_1.jpg"
+        },
+        {
+            "name" : "なに (Medium)",
+            "description" : "(Nani Sticker)",
+            "size" : "Size: Medium",
+            "price" : 4.99,
+            "image" : "./images/sticker_1.jpg"
+        },
+        {
+            "name" : "なに (Large)",
+            "description" : "(Nani Sticker)",
+            "size" : "Size: Large",
+            "price" : 5.99,
+            "image" : "./images/sticker_1.jpg"
+        }
+    ],
+    "Shindeiru Sticker": [
+        {
+            "name" : "お前はもう死んでいる (Small)",
+            "description" : "(Shindeiru Sticker)",
+            "size" : "Size: Small",
+            "price" : 4.99,
+            "image" : "./images/sticker_2.jpg"
+        },
+        {
+            "name" : "お前はもう死んでいる (Medium)",
+            "description" : "(Shindeiru Sticker)",
+            "size" : "Size: Medium",
+            "price" : 5.99,
+            "image" : "./images/sticker_2.jpg"
+        },
+        {
+            "name" : "お前はもう死んでいる (Large)",
+            "description" : "(Shindeiru Sticker)",
+            "size" : "Size: Large",
+            "price" : 6.99,
+            "image" : "./images/sticker_2.jpg"
+        }
+    ],
+    "Boba Sticker": [
+        {
+            "name" : "ミルクティー (Small)",
+            "description" : "(Boba Sticker)",
+            "size" : "Size: Small",
+            "price" : 3.99,
+            "image" : "./images/sticker_3.jpg"
+        },
+        {
+            "name" : "ミルクティー (Medium)",
+            "description" : "(Boba Sticker)",
+            "size" : "Size: Medium",
+            "price" : 4.99,
+            "image" : "./images/sticker_3.jpg"
+        },
+        {
+            "name" : "ミルクティー (Large)",
+            "description" : "(Boba Sticker)",
+            "size" : "Size: Large",
+            "price" : 5.99,
+            "image" : "./images/sticker_3.jpg"
+        }
+    ],
+    "Aloha State Sticker": [
+        {
+            "name" : "アローハーステート (Small)",
+            "description" : "(Aloha State Sticker)",
+            "size" : "Size: Small",
+            "price" : 5.99,
+            "image" : "./images/sticker_4.jpg"
+        },
+        {
+            "name" : "アローハーステート (Medium)",
+            "description" : "(Aloha State Sticker)",
+            "size" : "Size: Medium",
+            "price" : 6.99,
+            "image" : "./images/sticker_4.jpg"
+        },
+        {
+            "name" : "アローハーステート (Large)",
+            "description" : "(Aloha State Sticker)",
+            "size" : "Size: Large",
+            "price" : 7.99,
+            "image" : "./images/sticker_4.jpg"
+        }
+    ],
+    "Aloha Island Sticker": [
+        {
+            "name" : "アローハーアイランド (Small)",
+            "description" : "(Aloha Island Sticker)",
+            "size" : "Size: Small",
+            "price" : 5.99,
+            "image" : "./images/sticker_5.jpg"
+        },
+        {
+            "name" : "アローハーアイランド (Medium)",
+            "description" : "(Aloha Island Sticker)",
+            "size" : "Size: Medium",
+            "price" : 6.99,
+            "image" : "./images/sticker_5.jpg"
+        },
+        {
+            "name" : "アローハーアイランド (Large)",
+            "description" : "(Aloha Island Sticker)",
+            "size" : "Size: Large",
+            "price" : 7.99,
+            "image" : "./images/sticker_5.jpg"
+        }
+    ]
+}
